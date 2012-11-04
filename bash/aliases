@@ -1,9 +1,10 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
+alias cdms='c mystaffing'
+alias cdmt='c mytime'
 
 # misc
-alias reload='. ~/.bash_profile'
-alias quit='exit'
+alias r='. ~/.bash_profile && . .rvmrc'
 alias ..='cd ..'
 
 # kill
@@ -12,8 +13,9 @@ alias k9='kill -9'
 function ka { kill $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 function ka9 { kill -9 $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 
-# textmate
+# editors
 function m { mate ${*:-.}; }
+function e { subl -n ${*:-.}; }
 
 # ls
 alias l='ls -1'
@@ -22,9 +24,11 @@ alias la='ls -lah'
 alias lh='ls -la | grep ":[0-9]* \."' # show only hidden files
 
 # git
-alias g='git'
-alias gpll='git pull'
-alias gpsh='git push'
+alias gis='git stauts'
+alias gip='git pull --rebase'
 
 # guard
 alias guard='bundle exec guard'
+
+# memcached
+alias mem='/usr/local/bin/memcached -v'
