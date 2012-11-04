@@ -1,17 +1,23 @@
 [user]
-  name = <NAME LASTNAME>
-  email = <NAME.LASTNAME>@tieto.com
+  name = Artūrs Mekšs
+  email = arturs.mekss@tieto.com
+
 [alias]
-  co = checkout
+  c = checkout
+  po = push origin
+
 [color]
   diff = auto
   status = auto
   branch = auto
+
 [core]
   excludesfile = ~/.gitignore
   editor = subl -n -w
   autocrlf = input
-[apply]
-  whitespace = nowarn
+
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+
+[github]
+  user = AMekss
