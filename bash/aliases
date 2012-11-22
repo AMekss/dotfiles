@@ -24,7 +24,7 @@ alias la='ls -lah'
 alias lh='ls -la | grep ":[0-9]* \."' # show only hidden files
 
 # git
-alias gis='git stauts'
+alias gis='git status'
 alias gip='git pull --rebase'
 
 # guard
