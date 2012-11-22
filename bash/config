@@ -23,10 +23,7 @@ complete -C ~/.bash/completions/project -o default c
 complete -C ~/.bash/completions/project -o default cm
 complete -C ~/.bash/completions/capistrano -o default cap
 
-# prompt: [ root ~ master +? ] % cmd
-_user_root() { [ $USER == "root" ] && printf 'root '; }
-_rvm_prompt() { local s=$(rvm-prompt v g); printf "${s:+ ${s}}"; }
-export PS1="\[\e[0;35m\]\u\[\e[33m\]@\[\e[36m\]\h \$(_user_root)\[\e[33m\]\w\e[31m\]\$(__git_ps1)\[\e[36m\]\$(_rvm_prompt)\n\[\e[33m\]\[\e[32;1m\]$\[\e[0m\] "
+export PS1='\[\e[0;33m\]\u \[\e[0;32m\]\w\[\e[0;35m\]$(__git_ps1) \[\e[0;36m\]$(~/.rvm/bin/rvm-prompt) \n\[\e[0;31m\]\$\[\e[0;37m\] '
 
 export PATH=$HOME/bin:$HOME/.gem/ruby/1.8/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin/
