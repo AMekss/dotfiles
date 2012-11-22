@@ -43,12 +43,13 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 ### Oracle
-export ORACLE_IC_HOME=$HOME/Library/Oracle/instantclient
-export DYLD_LIBRARY_PATH=$ORACLE_IC_HOME
-export TNS_ADMIN=$DYLD_LIBRARY_PATH
+export ORACLE_IC_HOME=$HOME/Library/Oracle
+export DYLD_LIBRARY_PATH=$ORACLE_IC_HOME/instantclient_10_2
+export SQLPATH=$DYLD_LIBRARY_PATH
+export TNS_ADMIN=$ORACLE_IC_HOME/network/admin
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+export RC_ARCHS=i386
 export PATH=$PATH:$DYLD_LIBRARY_PATH
-export NLS_LANG=AMERICAN_AMERICA.UTF8
-export SQLPATH=$ORACLE_IC_HOME
 
 ### MySql
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
