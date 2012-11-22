@@ -4,7 +4,8 @@ alias cdms='c mystaffing'
 alias cdmt='c mytime'
 
 # misc
-alias r='. ~/.bash_profile && . .rvmrc'
+alias reload='. ~/.bash_profile'
+alias r='. .rvmrc'
 alias ..='cd ..'
 
 # kill
