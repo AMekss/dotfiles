@@ -41,3 +41,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 ### MySql
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
+### Redis
+export REDIS_PATH=/usr/local/bin/redis-server
