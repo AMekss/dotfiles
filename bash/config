@@ -39,14 +39,5 @@ shopt -s histappend
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-### Oracle
-export ORACLE_IC_HOME=$HOME/Library/Oracle
-export DYLD_LIBRARY_PATH=$ORACLE_IC_HOME/instantclient_10_2
-export SQLPATH=$DYLD_LIBRARY_PATH
-export TNS_ADMIN=$ORACLE_IC_HOME/network/admin
-export NLS_LANG="AMERICAN_AMERICA.UTF8"
-export RC_ARCHS=i386
-export PATH=$PATH:$DYLD_LIBRARY_PATH
-
 ### MySql
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
