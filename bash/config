@@ -25,7 +25,7 @@ complete -C ~/.bash/completions/capistrano -o default cap
 
 export PS1='\[\e[0;33m\]\u \[\e[0;32m\]\w\[\e[0;35m\]$(__git_ps1) \[\e[0;36m\]$(~/.rvm/bin/rvm-prompt) \n\[\e[0;31m\]\$\[\e[0;37m\] '
 
-export PATH=$HOME/bin:$HOME/.gem/ruby/1.8/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:$PATH
+export PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin/
 export EDITOR="subl -n -w"
 export SVN_EDITOR=$EDITOR

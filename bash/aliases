@@ -5,7 +5,6 @@ alias cdmt='c mytime'
 
 # misc
 alias reload='. ~/.bash_profile'
-alias r='. .rvmrc'
 alias ..='cd ..'
 
 # kill
@@ -27,9 +26,3 @@ alias lh='ls -la | grep ":[0-9]* \."' # show only hidden files
 # git
 alias gis='git status'
 alias gip='git pull --rebase'
-
-# guard
-alias guard='bundle exec guard'
-
-# memcached
-alias mem='/usr/local/bin/memcached -v'
