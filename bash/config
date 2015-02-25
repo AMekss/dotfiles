@@ -44,3 +44,9 @@ export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 ### Redis
 export REDIS_PATH=/usr/local/bin/redis-server
+
+### Elastic
+export ELASTIC_EXECUTABLE_PATH=/usr/local/bin/elasticsearch
+
+### ChefDK
+export PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
