@@ -27,7 +27,7 @@ export PS1='\[\e[0;33m\]\u \[\e[0;32m\]\w\[\e[0;35m\]$(__git_ps1) \[\e[0;36m\]$(
 
 export PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin/
-export EDITOR="subl -n -w"
+export EDITOR="subl3"
 export SVN_EDITOR=$EDITOR
 
 ### Bash http://blog.macromates.com/2008/working-with-history-in-bash/

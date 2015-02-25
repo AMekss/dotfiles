@@ -15,7 +15,7 @@ function ka9 { kill -9 $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 
 # editors
 function m { mate ${*:-.}; }
-function e { subl -n ${*:-.}; }
+function e { subl3 -n ${*:-.}; }
 
 # ls
 alias l='ls -1'
