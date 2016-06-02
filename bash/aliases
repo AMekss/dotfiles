@@ -1,7 +1,6 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
-alias cdms='c mystaffing'
-alias cdmt='c mytime'
+function ci { cd ~/code/integrations-infrastructure/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
@@ -23,7 +22,16 @@ alias ll='ls -lh'
 alias la='ls -lah'
 alias lh='ls -la | grep ":[0-9]* \."' # show only hidden files
 
+#rvm
+alias ri='rvm use 2.3.0@integration'
+
 # git
 alias gis='git status'
 alias gip='git pull --rebase'
 alias gil="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+# docker
+alias dms='source ~/.bash/scripts/docker_machine_start.sh'
+
+alias dm='docker-machine'
+alias dc='docker-compose'

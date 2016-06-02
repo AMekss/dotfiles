@@ -21,3 +21,5 @@
 
 [github]
   user = AMekss
+[push]
+	default = simple

@@ -20,8 +20,12 @@ source ~/.bash/completions/mategem
 source ~/.bash/completions/bundler
 complete -C ~/.bash/completions/rake -o default rake
 complete -C ~/.bash/completions/project -o default c
-complete -C ~/.bash/completions/project -o default cm
+complete -C ~/.bash/completions/project_integration -o default ci
 complete -C ~/.bash/completions/capistrano -o default cap
+complete -C ~/.bash/completions/docker-machine -o default dm
+complete -C ~/.bash/completions/docker-machine -o default docker-machine
+complete -C ~/.bash/completions/docker-compose -o default dc
+complete -C ~/.bash/completions/docker-compose -o default docker-compose
 
 export PS1='\[\e[0;33m\]\u \[\e[0;32m\]\w\[\e[0;35m\]$(__git_ps1) \[\e[0;36m\]$(~/.rvm/bin/rvm-prompt) \n\[\e[0;31m\]\$\[\e[0;37m\] '
 
@@ -50,3 +54,6 @@ export ELASTIC_EXECUTABLE_PATH=/usr/local/bin/elasticsearch
 
 ### ChefDK
 export PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
+
+### RabbitMQ
+export PATH=$PATH:/usr/local/sbin

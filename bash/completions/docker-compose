@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require_relative "./completion.rb"
+
+KNOWN_COMMANDS = %w{build config create down events exec help kill logs pause port ps pull restart rm run scale start stop unpause up version}.freeze
+
+puts Completion.new(KNOWN_COMMANDS).matches(ENV["COMP_LINE"])
+exit 0
