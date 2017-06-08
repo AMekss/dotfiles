@@ -4,7 +4,7 @@ function ci { cd ~/code/integrations-infrastructure/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
-alias ..='cd ..'
+alias rl='rvm use 2.3.0@local'
 
 # kill
 alias k='kill'
@@ -13,17 +13,13 @@ function ka { kill $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 function ka9 { kill -9 $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 
 # editors
-function m { mate ${*:-.}; }
-function e { subl3 -n ${*:-.}; }
+function e { subl -n ${*:-.}; }
 
 # ls
 alias l='ls -1'
 alias ll='ls -lh'
 alias la='ls -lah'
 alias lh='ls -la | grep ":[0-9]* \."' # show only hidden files
-
-#rvm
-alias ri='rvm use 2.3.0@integration'
 
 # git
 alias gis='git status'
