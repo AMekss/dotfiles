@@ -1,6 +1,6 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
-function ci { cd ~/code/integrations-infrastructure/$1; }
+function cgo { cd $GOPATH/src/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'

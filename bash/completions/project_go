@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require_relative "./completion.rb"
 
-KNOWN_COMMANDS = `ls ~/code/integrations-infrastructure`.split
+KNOWN_COMMANDS = `ls $GOPATH/src/*`.split
 
 puts Completion.new(KNOWN_COMMANDS).matches(ENV["COMP_LINE"])
 exit 0

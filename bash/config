@@ -20,7 +20,7 @@ source ~/.bash/completions/mategem
 source ~/.bash/completions/bundler
 complete -C ~/.bash/completions/rake -o default rake
 complete -C ~/.bash/completions/project -o default c
-complete -C ~/.bash/completions/project_integration -o default ci
+complete -C ~/.bash/completions/project_go -o default cgo
 complete -C ~/.bash/completions/capistrano -o default cap
 complete -C ~/.bash/completions/docker-machine -o default dm
 complete -C ~/.bash/completions/docker-machine -o default docker-machine
@@ -57,3 +57,8 @@ export PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
 
 ### RabbitMQ
 export PATH=$PATH:/usr/local/sbin
+
+###GO
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
