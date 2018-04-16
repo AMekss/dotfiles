@@ -20,7 +20,7 @@ source ~/.bash/completions/mategem
 source ~/.bash/completions/bundler
 complete -C ~/.bash/completions/rake -o default rake
 complete -C ~/.bash/completions/project -o default c
-complete -C ~/.bash/completions/project_go -o default cgo
+complete -C ~/.bash/completions/project_go -o default cdgo
 complete -C ~/.bash/completions/capistrano -o default cap
 complete -C ~/.bash/completions/docker-machine -o default dm
 complete -C ~/.bash/completions/docker-machine -o default docker-machine
@@ -66,3 +66,6 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+### pass
+source /usr/local/etc/bash_completion.d/pass

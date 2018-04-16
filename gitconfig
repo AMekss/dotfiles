@@ -23,6 +23,10 @@
   user = AMekss
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain
+[url "git@github.com:"]
+	insteadOf = https://github.com/
 [lfs]
 	fetchexclude = images/
 [filter "lfs"]

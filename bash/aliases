@@ -1,6 +1,6 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
-function cgo { cd $GOPATH/src/github.com/fromatob/$1; }
+function cdgo { cd $GOPATH/src/github.com/fromatob/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
@@ -31,3 +31,5 @@ alias dms='source ~/.bash/scripts/docker_machine_start.sh'
 
 alias dm='docker-machine'
 alias dc='docker-compose'
+
+alias abpass='PASSWORD_STORE_DIR=$HOME/code/ops-secrets pass'
