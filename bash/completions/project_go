@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-require_relative "./completion.rb"
-
-KNOWN_COMMANDS = `ls $GOPATH/src/github.com/fromatob/`.split
-
-puts Completion.new(KNOWN_COMMANDS).matches(ENV["COMP_LINE"])
-exit 0

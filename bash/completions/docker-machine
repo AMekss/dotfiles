@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-require_relative "./completion.rb"
-
-KNOWN_COMMANDS = %w{active config create env inspect ip kill ls provision regenerate restart rm ssh scp start status stop upgrade url version help}.freeze
-
-puts Completion.new(KNOWN_COMMANDS).matches(ENV["COMP_LINE"])
-exit 0

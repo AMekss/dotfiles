@@ -1,10 +1,8 @@
 [user]
-  name = Artūrs Mekšs
-  email = arturs.mekss@gmail.com
+	name = Arturs Mekss
+	email = arturs.mekss@gmail.com
 
 [alias]
-  c = checkout
-  po = push origin
 
 [color]
   diff = auto

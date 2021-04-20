@@ -1,16 +1,8 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
-function cdgo { cd $GOPATH/src/github.com/fromatob/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
-alias rl='rvm use 2.3.0@local'
-
-# kill
-alias k='kill'
-alias k9='kill -9'
-function ka { kill $(ps xc | grep -wi "$*" | awk '{print $1}'); }
-function ka9 { kill -9 $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 
 # editors
 function e { subl -n ${*:-.}; }
@@ -27,9 +19,7 @@ alias gip='git pull --rebase'
 alias gil="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # docker
-alias dms='source ~/.bash/scripts/docker_machine_start.sh'
-
-alias dm='docker-machine'
 alias dc='docker-compose'
-
-alias abpass='PASSWORD_STORE_DIR=$HOME/code/ops-secrets pass'
+alias kx='kubectx'
+alias ks='kubens'
+alias k='kubectl'
