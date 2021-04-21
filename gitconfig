@@ -3,22 +3,24 @@
 	email = arturs.mekss@gmail.com
 
 [alias]
+  	c = checkout
+  	po = push origin
 
 [color]
-  diff = auto
-  status = auto
-  branch = auto
+  	diff = auto
+  	status = auto
+  	branch = auto
 
 [core]
-  excludesfile = ~/.gitignore
-  editor = subl -n -w
-  autocrlf = input
+  	excludesfile = ~/.gitignore
+  	editor = subl -n -w
+  	autocrlf = input
 
 [format]
-  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+  	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 
 [github]
-  user = AMekss
+  	user = AMekss
 [push]
 	default = simple
 [credential]
