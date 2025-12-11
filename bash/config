@@ -28,6 +28,9 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Silence deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# roger terraform access
+export GOOGLE_APPLICATION_CREDENTIALS=~/.ssh/terraformer-glacier-321814-161fb08e71b7.json
+
 # brew setup
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

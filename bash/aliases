@@ -19,7 +19,7 @@ alias gip='git pull --rebase'
 alias gil="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # docker
-alias dc='docker-compose'
+alias dc='docker compose'
 alias kx='kubectx'
 alias ks='kubens'
 alias k='kubectl'
